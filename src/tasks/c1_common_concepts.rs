@@ -76,7 +76,7 @@ pub fn sign_checker(number: i32) -> &'static str {
 // Write a program that finds the largest number in an array of 5 integers using a for or while
 // loop.
 pub fn find_biggest_number(some_array: [u32; 5]) -> u32 {
-    u32 mx = some_array[0];
+    let mut mx = some_array[0];
     for v in some_array {
         if v > mx {
             mx = v;
